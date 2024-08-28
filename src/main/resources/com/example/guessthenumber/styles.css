@@ -1,0 +1,35 @@
+#root {
+    -fx-background-color: #A0E3F2;
+}
+
+#statusLabel {
+    -fx-pref-height: 120px;
+    -fx-text-alignment: center;
+    -fx-text-fill: #8C3E44;
+    -fx-font-size: 40px;
+    -fx-font-family: "Baskerville Old Face";
+}
+
+#numberPane {
+    -fx-pref-height: 400px;
+}
+
+#numberGrid {
+    -fx-pref-height: 400px;
+    -fx-background-color: #F2D8E6;
+}
+
+#choicePane {
+    -fx-pref-height: 120px;
+}
+
+#yesButton, #noButton {
+    -fx-pref-height: 50px;
+    -fx-pref-width: 100px;
+    -fx-font-family: "Baskerville Old Face";
+    -fx-font-size: 25px;
+    -fx-background-color: #F2B6E2;
+    -fx-background-radius: 150;
+    -fx-border-radius: 150;
+    -fx-border-color: #8C3E44;
+}
