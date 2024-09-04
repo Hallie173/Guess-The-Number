@@ -10,18 +10,18 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guessthenumber.Controller">
    <children>
-      <VBox id="root" prefHeight="600.0" prefWidth="800.0" stylesheets="@styles.css">
+      <VBox fx:id="root" prefHeight="600.0" prefWidth="800.0" stylesheets="@styles.css">
          <children>
-            <Label id="statusLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="109.0" prefWidth="800.0" stylesheets="@styles.css" text="Is your number in the grid?">
+            <Label fx:id="statusLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="109.0" prefWidth="800.0" stylesheets="@styles.css" text="Is your number in the grid?">
                <font>
                   <Font name="Castellar" size="12.0" />
                </font>
             </Label>
-            <Pane id="numberPane" prefHeight="384.0" prefWidth="800.0" stylesheets="@styles.css">
+            <Pane fx:id="numberPane" prefHeight="384.0" prefWidth="800.0" stylesheets="@styles.css">
                <children>
-                  <GridPane id="numberGrid" gridLinesVisible="true" layoutX="35.0" prefHeight="334.0" prefWidth="729.0" stylesheets="@styles.css">
+                  <GridPane fx:id="numberGrid" alignment="CENTER" gridLinesVisible="true" layoutX="35.0" prefHeight="334.0" prefWidth="729.0" stylesheets="@styles.css">
                      <columnConstraints>
                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -37,13 +37,45 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                      </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@styles.css" text="Label" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@styles.css" text="Label" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@styles.css" text="Label" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@styles.css" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@styles.css" text="Label" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@styles.css" text="Label" GridPane.columnIndex="4" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@styles.css" text="Label" GridPane.columnIndex="3" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@styles.css" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@styles.css" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@styles.css" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@styles.css" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@styles.css" text="Label" GridPane.columnIndex="2" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@styles.css" text="Label" GridPane.rowIndex="1" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@styles.css" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@styles.css" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@styles.css" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@styles.css" text="Label" GridPane.columnIndex="1" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@styles.css" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@styles.css" text="Label" GridPane.rowIndex="2" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@styles.css" text="Label" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@styles.css" text="Label" GridPane.rowIndex="4" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@styles.css" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@styles.css" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@styles.css" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@styles.css" text="Label" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@styles.css" text="Label" GridPane.columnIndex="5" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@styles.css" text="Label" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@styles.css" text="Label" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@styles.css" text="Label" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@styles.css" text="Label" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                     </children>
                   </GridPane>
                </children>
             </Pane>
-            <Pane id="choicePane" prefHeight="200.0" prefWidth="800.0" stylesheets="@styles.css">
+            <Pane fx:id="choicePane" prefHeight="200.0" prefWidth="800.0" stylesheets="@styles.css">
                <children>
-                  <Button id="yesButton" alignment="CENTER" contentDisplay="CENTER" layoutX="226.0" layoutY="29.0" mnemonicParsing="false" stylesheets="@styles.css" text="YES" />
-                  <Button id="noButton" alignment="CENTER" contentDisplay="CENTER" layoutX="483.0" layoutY="29.0" mnemonicParsing="false" stylesheets="@styles.css" text="NO" />
+                  <Button fx:id="yesButton" alignment="CENTER" contentDisplay="CENTER" layoutX="226.0" layoutY="29.0" mnemonicParsing="false" stylesheets="@styles.css" text="YES" />
+                  <Button fx:id="noButton" alignment="CENTER" contentDisplay="CENTER" layoutX="483.0" layoutY="29.0" mnemonicParsing="false" stylesheets="@styles.css" text="NO" />
                </children>
             </Pane>
          </children>

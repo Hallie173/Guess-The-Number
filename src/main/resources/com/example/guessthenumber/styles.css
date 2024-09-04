@@ -17,6 +17,7 @@
 #numberGrid {
     -fx-pref-height: 400px;
     -fx-background-color: #F2D8E6;
+    -fx-alignment: center;
 }
 
 #choicePane {
@@ -32,4 +33,13 @@
     -fx-background-radius: 150;
     -fx-border-radius: 150;
     -fx-border-color: #8C3E44;
+}
+
+#numberGrid .label {
+    -fx-font-size: 50px;
+    -fx-alignment: center;
+    -fx-border-width: 2px;
+    -fx-border-color: #0B5B8C;
+    -fx-padding: 0;
+    -fx-font-family: "Garamond";
 }
