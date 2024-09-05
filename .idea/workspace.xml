@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10616cb9-97aa-4720-aa63-2a0623f34eba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/guessthenumber/Controller.java" afterDir="false" />
+    <list default="true" id="10616cb9-97aa-4720-aa63-2a0623f34eba" name="Changes" comment="Xong giao dien">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/guessthenumber/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/guessthenumber/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/guessthenumber/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/guessthenumber/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/guessthenumber/NumberView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/guessthenumber/NumberView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/guessthenumber/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/guessthenumber/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +24,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Hallie173&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Hallie173/Guess-The-Number&quot;,
+    &quot;accountId&quot;: &quot;07173c46-8161-44e3-844c-f609f054f897&quot;
+  }
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -82,6 +92,14 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.419" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.419" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -91,10 +109,25 @@
       <option name="presentableId" value="Default" />
       <updated>1724842533863</updated>
       <workItem from="1724842534988" duration="9395000" />
+      <workItem from="1725494830625" duration="1807000" />
+      <workItem from="1725538764512" duration="321000" />
     </task>
+    <task id="LOCAL-00001" summary="Xong giao dien">
+      <option name="closed" value="true" />
+      <created>1725433492714</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1725433492714</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Xong giao dien" />
+    <option name="LAST_COMMIT_MESSAGE" value="Xong giao dien" />
   </component>
 </project>

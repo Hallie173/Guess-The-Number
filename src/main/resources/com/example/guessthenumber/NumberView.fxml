@@ -74,8 +74,8 @@
             </Pane>
             <Pane fx:id="choicePane" prefHeight="200.0" prefWidth="800.0" stylesheets="@styles.css">
                <children>
-                  <Button fx:id="yesButton" alignment="CENTER" contentDisplay="CENTER" layoutX="226.0" layoutY="29.0" mnemonicParsing="false" stylesheets="@styles.css" text="YES" />
-                  <Button fx:id="noButton" alignment="CENTER" contentDisplay="CENTER" layoutX="483.0" layoutY="29.0" mnemonicParsing="false" stylesheets="@styles.css" text="NO" />
+                  <Button fx:id="yesButton" alignment="CENTER" contentDisplay="CENTER" layoutX="226.0" layoutY="29.0" mnemonicParsing="false" stylesheets="@styles.css" text="YES" onAction="#handleYesButton"/>
+                  <Button fx:id="noButton" alignment="CENTER" contentDisplay="CENTER" layoutX="483.0" layoutY="29.0" mnemonicParsing="false" stylesheets="@styles.css" text="NO" onAction="#handleNoButton"/>
                </children>
             </Pane>
          </children>

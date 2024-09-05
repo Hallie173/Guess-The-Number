@@ -5,6 +5,7 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.geometry.HPos;
 import javafx.geometry.VPos;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.*;
 import javafx.scene.text.Font;
@@ -17,6 +18,11 @@ public class Controller {
 
     @FXML
     private GridPane numberGrid;
+
+    @FXML
+    private Button yesButton;
+    @FXML
+    private Button noButton;
 
     @FXML
     private void initialize() {
@@ -68,10 +74,12 @@ public class Controller {
     }
     @FXML
     private void handleYesButton() {
-
+        System.out.println("You press YES");
+        randomNumberGrid(numberGrid);
     }
     @FXML
     private void handleNoButton() {
-
+        System.out.println("You press NO");
+        randomNumberGrid(numberGrid);
     }
 }
