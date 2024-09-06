@@ -23,7 +23,8 @@ public class Controller {
     private GridPane numberGrid;
 
     private int[] numberArray = new int[ROWS * COLS];
-    private int[] checkArray = new int[100];
+    private int length = 100;
+    private int[] checkArray = new int[length];
 
     @FXML
     private Stage resultStage = new Stage();
@@ -98,8 +99,13 @@ public class Controller {
     private void handleYesButton() throws Exception {
         System.out.println("You press YES");
         randomNumberGrid(numberGrid);
-        for (int i = 0; i < 100; i++) {
-            System.out.println(checkArray[i]);     //check
+
+        for (int i = 0; i < ROWS * COLS; i++) {
+            for (int j = 0; j < length; j++) {
+                if (checkArray[j] == numberArray[i]) {
+                    swap(checkArray[j], length);
+                }
+            }
         }
         //resultStage.show();
     }
@@ -108,8 +114,21 @@ public class Controller {
     private void handleNoButton() throws Exception {
         System.out.println("You press NO");
         randomNumberGrid(numberGrid);
+
+        for (int i = 0; i < ROWS * COLS; i++) {
+            for (int j = 0; j < length; j++) {
+                if (checkArray[j] == numberArray[i]) {
+                    swap(checkArray[j], length);
+                    length--;
+                }
+            }
+        }
         //resultStage.show();
     }
 
-
+    private void swap(int a, int b) {
+        int tmp = a;
+        a = b;
+        b = tmp;
+    }
 }
