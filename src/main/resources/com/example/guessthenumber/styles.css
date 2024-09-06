@@ -43,3 +43,27 @@
     -fx-padding: 0;
     -fx-font-family: "Garamond";
 }
+
+#resultBox {
+    -fx-background-color: #8C3E44;
+}
+
+#resultLabel {
+    -fx-font-family: "Baskerville Old Face";
+    -fx-font-size: 40px;
+    -fx-text-alignment: center;
+    -fx-text-fill: #A0E3F2;
+}
+
+#numberResult {
+    -fx-font-family: "Garamond";
+    -fx-font-size: 80px;
+    -fx-border-color: #f8cdff;
+    -fx-border-width: 5px;
+    -fx-text-fill: #0B5B8C;
+    -fx-background-color: #fff168;
+    -fx-pref-height: 160px;
+    -fx-pref-width: 160px;
+    -fx-border-radius: 100px;
+    -fx-background-radius: 100px;
+}

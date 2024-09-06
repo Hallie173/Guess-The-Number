@@ -3,13 +3,16 @@ package com.example.guessthenumber;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.geometry.HPos;
 import javafx.geometry.VPos;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.*;
-import javafx.scene.text.Font;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.util.Collections;
 
 public class Controller {
@@ -18,6 +21,12 @@ public class Controller {
 
     @FXML
     private GridPane numberGrid;
+
+    private int[] numberArray = new int[ROWS * COLS];
+    private int[] checkArray = new int[100];
+
+    @FXML
+    private Stage resultStage = new Stage();
 
     @FXML
     private Button yesButton;
@@ -28,6 +37,9 @@ public class Controller {
     private void initialize() {
         System.out.println("Initialize");
         randomNumberGrid(numberGrid);
+        for (int i = 0; i < 100; i++) {
+            checkArray[i] = i;
+        }
     }
 
     private void randomNumberGrid(GridPane numberGrid) {
@@ -63,7 +75,7 @@ public class Controller {
             for (int col = 0; col < COLS; col++) {
                 int index = row * COLS + col;
                 int number = numbers.get(index);
-
+                numberArray[index] = number;
                 Label numberLabel = new Label(String.valueOf(number));
                 numberLabel.getStyleClass().add("label");
                 numberLabel.setMaxSize(Double.MAX_VALUE, Double.MAX_VALUE);
@@ -71,15 +83,33 @@ public class Controller {
                 numberGrid.add(numberLabel, col, row);
             }
         }
+
     }
+
     @FXML
-    private void handleYesButton() {
+    private void showResultView() throws Exception {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/guessthenumber/ResultView.fxml"));
+            Scene scene = new Scene(loader.load(), 500, 300);
+            resultStage.setTitle("I know your number!");
+            resultStage.setScene(scene);
+    }
+
+    @FXML
+    private void handleYesButton() throws Exception {
         System.out.println("You press YES");
         randomNumberGrid(numberGrid);
+        for (int i = 0; i < 100; i++) {
+            System.out.println(checkArray[i]);     //check
+        }
+        //resultStage.show();
     }
+
     @FXML
-    private void handleNoButton() {
+    private void handleNoButton() throws Exception {
         System.out.println("You press NO");
         randomNumberGrid(numberGrid);
+        //resultStage.show();
     }
+
+
 }
