@@ -1,5 +1,5 @@
 #root {
-    -fx-background-color: #A0E3F2;
+    -fx-background-color: #69AFAD;
 }
 
 #statusLabel {
@@ -16,7 +16,7 @@
 
 #numberGrid {
     -fx-pref-height: 400px;
-    -fx-background-color: #F2D8E6;
+    -fx-background-color: #F9E5DA;
     -fx-alignment: center;
 }
 
@@ -29,7 +29,7 @@
     -fx-pref-width: 100px;
     -fx-font-family: "Baskerville Old Face";
     -fx-font-size: 25px;
-    -fx-background-color: #F2B6E2;
+    -fx-background-color: #EFA5A6;
     -fx-background-radius: 150;
     -fx-border-radius: 150;
     -fx-border-color: #8C3E44;
@@ -39,29 +39,29 @@
     -fx-font-size: 50px;
     -fx-alignment: center;
     -fx-border-width: 2px;
-    -fx-border-color: #0B5B8C;
+    -fx-border-color: #354E52;
     -fx-padding: 0;
     -fx-font-family: "Garamond";
 }
 
 #resultBox {
-    -fx-background-color: #8C3E44;
+    -fx-background-color: #354E52;
 }
 
 #resultLabel {
     -fx-font-family: "Baskerville Old Face";
     -fx-font-size: 40px;
     -fx-text-alignment: center;
-    -fx-text-fill: #A0E3F2;
+    -fx-text-fill: #F9E5DA;
 }
 
 #numberResult {
     -fx-font-family: "Garamond";
     -fx-font-size: 80px;
-    -fx-border-color: #f8cdff;
+    -fx-border-color: #EFA5A6;
     -fx-border-width: 5px;
-    -fx-text-fill: #0B5B8C;
-    -fx-background-color: #fff168;
+    -fx-text-fill: #BA5E62;
+    -fx-background-color: #F9E5DA;
     -fx-pref-height: 160px;
     -fx-pref-width: 160px;
     -fx-border-radius: 100px;

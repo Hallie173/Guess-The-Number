@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10616cb9-97aa-4720-aa63-2a0623f34eba" name="Changes" comment="Almost Done">
+    <list default="true" id="10616cb9-97aa-4720-aa63-2a0623f34eba" name="Changes" comment="Latest commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/guessthenumber/ResultViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/guessthenumber/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/guessthenumber/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/guessthenumber/ResultController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/guessthenumber/ResultView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/guessthenumber/ResultView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/guessthenumber/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/guessthenumber/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +117,8 @@
       <workItem from="1725589337844" duration="1216000" />
       <workItem from="1725592413019" duration="8515000" />
       <workItem from="1725619632681" duration="6689000" />
-      <workItem from="1725668576073" duration="14309000" />
+      <workItem from="1725668576073" duration="14449000" />
+      <workItem from="1725709885903" duration="3243000" />
     </task>
     <task id="LOCAL-00001" summary="Xong giao dien">
       <option name="closed" value="true" />
@@ -173,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725691603338</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Latest commit">
+      <option name="closed" value="true" />
+      <created>1725691897471</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1725691897471</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +205,7 @@
     <MESSAGE value="Xong giao dien" />
     <MESSAGE value="Button action!" />
     <MESSAGE value="Almost Done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Almost Done" />
+    <MESSAGE value="Latest commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Latest commit" />
   </component>
 </project>

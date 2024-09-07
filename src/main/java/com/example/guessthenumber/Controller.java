@@ -90,13 +90,19 @@ public class Controller {
     @FXML
     private void showResultView(int result) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/guessthenumber/ResultView.fxml"));
-        Scene resultScene = new Scene(loader.load(), 500, 300);
+        AnchorPane root = loader.load();
+
+        // Get the controller and set the result
+        ResultViewController resultController = loader.getController();
+        resultController.setResult(result);
+
+        Scene resultScene = new Scene(root, 500, 300);
         Stage resultStage = new Stage();
-        numberResult.setText(String.valueOf(result));
         resultStage.setTitle("I know your number!");
         resultStage.setScene(resultScene);
         resultStage.show();
     }
+
 
     @FXML
     private void handleYesButton() throws Exception {
