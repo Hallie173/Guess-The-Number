@@ -95,15 +95,6 @@ public class Controller {
         numberResult.setText(String.valueOf(result));
         resultStage.setTitle("I know your number!");
         resultStage.setScene(resultScene);
-
-        ResultController resultController = loader.getController();
-
-        if (resultController != null) {
-            resultController.setNumber(checkArray[0]);
-        } else {
-            System.err.println("ResultController is null. Make sure FXML is correctly loaded.");
-        }
-
         resultStage.show();
     }
 
