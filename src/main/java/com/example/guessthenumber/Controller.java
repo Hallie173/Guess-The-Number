@@ -134,7 +134,7 @@ public class Controller {
             int currentNumber = numberArray[i];
             for (int j = 0; j < newLength; j++) {
                 if (checkArray[j] == currentNumber) {
-                    swap(checkArray[j], checkArray[newLength - 1]);
+                    swap(j, newLength - 1);
                     newLength--;
                     break;
                 }
@@ -155,8 +155,8 @@ public class Controller {
 
 
     private void swap(int i, int j) {
-        int tmp = i;
-        i = j;
-        j = tmp;
+        int tmp = checkArray[i];
+        checkArray[i] = checkArray[j];
+        checkArray[j] = tmp;
     }
 }
