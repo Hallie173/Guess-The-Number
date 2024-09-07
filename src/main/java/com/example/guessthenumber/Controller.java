@@ -47,7 +47,7 @@ public class Controller {
         numberGrid.getChildren().clear();
 
         ObservableList<Integer> numbers = FXCollections.observableArrayList();
-        for (int i = 0; i < ROWS*COLS; i++) {
+        for (int i = 0; i < 100; i++) {
             numbers.add(i);
         }
 
@@ -98,37 +98,65 @@ public class Controller {
     @FXML
     private void handleYesButton() throws Exception {
         System.out.println("You press YES");
-        randomNumberGrid(numberGrid);
-
+        int swapIndex = 0;
+        int newLength = length;
         for (int i = 0; i < ROWS * COLS; i++) {
-            for (int j = 0; j < length; j++) {
-                if (checkArray[j] == numberArray[i]) {
-                    swap(checkArray[j], length);
+            int currentNumber = numberArray[i];
+            for (int j = 0; j < newLength; j++) {
+                if (checkArray[j] == currentNumber) {
+                    swap(j, swapIndex);
+                    swapIndex++;
+                    break;
                 }
             }
         }
-        //resultStage.show();
+
+        length = swapIndex;
+
+        for (int k = 0; k < length; k++) {
+            System.out.print(checkArray[k] + " - ");
+        }
+
+        if (length == 1) {
+            System.out.println("\n" + checkArray[0]);
+        }
+
+        randomNumberGrid(numberGrid);
     }
+
 
     @FXML
     private void handleNoButton() throws Exception {
         System.out.println("You press NO");
-        randomNumberGrid(numberGrid);
 
+        int newLength = length;
         for (int i = 0; i < ROWS * COLS; i++) {
-            for (int j = 0; j < length; j++) {
-                if (checkArray[j] == numberArray[i]) {
-                    swap(checkArray[j], length);
-                    length--;
+            int currentNumber = numberArray[i];
+            for (int j = 0; j < newLength; j++) {
+                if (checkArray[j] == currentNumber) {
+                    swap(checkArray[j], checkArray[newLength - 1]);
+                    newLength--;
+                    break;
                 }
             }
         }
-        //resultStage.show();
+        length = newLength;
+
+        for (int k = 0; k < length; k++) {
+            System.out.print(checkArray[k] + " - ");
+        }
+
+        if (length == 1) {
+            System.out.println("\n" + checkArray[0]);
+        }
+
+        randomNumberGrid(numberGrid);
     }
 
-    private void swap(int a, int b) {
-        int tmp = a;
-        a = b;
-        b = tmp;
+
+    private void swap(int i, int j) {
+        int tmp = i;
+        i = j;
+        j = tmp;
     }
 }
