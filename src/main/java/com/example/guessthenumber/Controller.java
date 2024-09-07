@@ -27,7 +27,7 @@ public class Controller {
     private int[] checkArray = new int[length];
 
     @FXML
-    private Stage resultStage = new Stage();
+    private Label numberResult;
 
     @FXML
     private Button yesButton;
@@ -88,11 +88,23 @@ public class Controller {
     }
 
     @FXML
-    private void showResultView() throws Exception {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/guessthenumber/ResultView.fxml"));
-            Scene scene = new Scene(loader.load(), 500, 300);
-            resultStage.setTitle("I know your number!");
-            resultStage.setScene(scene);
+    private void showResultView(int result) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/guessthenumber/ResultView.fxml"));
+        Scene resultScene = new Scene(loader.load(), 500, 300);
+        Stage resultStage = new Stage();
+        numberResult.setText(String.valueOf(result));
+        resultStage.setTitle("I know your number!");
+        resultStage.setScene(resultScene);
+
+        ResultController resultController = loader.getController();
+
+        if (resultController != null) {
+            resultController.setNumber(checkArray[0]);
+        } else {
+            System.err.println("ResultController is null. Make sure FXML is correctly loaded.");
+        }
+
+        resultStage.show();
     }
 
     @FXML
@@ -118,7 +130,7 @@ public class Controller {
         }
 
         if (length == 1) {
-            System.out.println("\n" + checkArray[0]);
+            showResultView(checkArray[0]);
         }
 
         randomNumberGrid(numberGrid);
@@ -147,7 +159,7 @@ public class Controller {
         }
 
         if (length == 1) {
-            System.out.println("\n" + checkArray[0]);
+            showResultView(checkArray[0]);
         }
 
         randomNumberGrid(numberGrid);
